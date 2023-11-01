@@ -2,7 +2,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: 'http://localhost:4000'
+  baseURL: 'https://api-room-78toz7buc-wallysom2.vercel.app/'
 });
 
 export default api;
