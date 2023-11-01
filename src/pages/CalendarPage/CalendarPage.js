@@ -35,11 +35,6 @@ function CalendarPage() {
 const goToRoomSelection = async () => {
   try {
     const response = await api.post('/api/days', { selectedDates });
-    if (response.status === 200) {
-      navigate('/room-selection', { state: { selectedDates } });
-    } else {
-      console.error('Erro ao enviar datas para a API');
-    }
   } catch (error) {
     console.error('Erro ao enviar datas para a API', error);
   }
